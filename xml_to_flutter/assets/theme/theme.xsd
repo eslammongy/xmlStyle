@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="theme">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="meta">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string" />
+                            <xs:element name="creationDate" type="xs:string" />
+                            <xs:element name="authorName" type="xs:string" />
+                            <xs:element name="authorEmail" type="xs:string" />
+                            <xs:element name="authorUrl" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="assets" type="xs:string" />
+                <xs:element name="tkCanvas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="style" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tkHr">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="bgCircle">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="fill">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="gradient">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="color" maxOccurs="unbounded">
+                                                                                            <xs:complexType>
+                                                                                                <xs:simpleContent>
+                                                                                                    <xs:extension base="xs:string">
+                                                                                                        <xs:attribute name="position" use="required" />
+                                                                                                    </xs:extension>
+                                                                                                </xs:simpleContent>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute name="type" use="required" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="outerRadius" use="required" />
+                                                            <xs:attribute name="innerRadius" type="xs:integer" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="tkArc">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="fill">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="gradient">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="color" maxOccurs="unbounded">
+                                                                                            <xs:complexType>
+                                                                                                <xs:simpleContent>
+                                                                                                    <xs:extension base="xs:string">
+                                                                                                        <xs:attribute name="position" use="required" />
+                                                                                                    </xs:extension>
+                                                                                                </xs:simpleContent>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute name="type" use="required" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="outerRadius" use="required" />
+                                                            <xs:attribute name="innerRadius" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tkSecs">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="bgCircle">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="fill">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="color" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="outerRadius" use="required" />
+                                                            <xs:attribute name="innerRadius" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="tkArc">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="fill">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="color" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="outerRadius" use="required" />
+                                                            <xs:attribute name="innerRadius" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tkTxt">
+                                            <xs:complexType>
+                                                <xs:attribute name="font" use="required" />
+                                                <xs:attribute name="size" use="required" />
+                                                <xs:attribute name="color" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:integer" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="width" use="required" />
+                        <xs:attribute name="height" use="required" />
+                        <xs:attribute name="background" use="required" />
+                        <xs:attribute name="style" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="version" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="theme.xsd"?>
+<theme version="1.0.0">
+	<meta>
+		<name>Theme 001</name>
+		<creationDate>June 2021</creationDate>
+		<authorName>Tony Saad</authorName>
+		<authorEmail>tony@tonysaad.com</authorEmail>
+		<authorUrl>www.tonysaad.com</authorUrl>
+	</meta>
+	<assets>
+	</assets>
+	<tkCanvas width="75%" height="100%" background="transparent" style="1">
+		<style id="1">
+			<tkHr>
+				<bgCircle outerRadius="50%" innerRadius="0">
+					<fill>
+						<gradient type="radial">
+							<color position="center">#F2F4C8</color>
+							<color position="30%">#4F5147</color>
+							<color position="edge">#111111</color>
+						</gradient>
+					</fill>
+				</bgCircle>
+				<tkArc outerRadius="50%" innerRadius="22.6%">
+					<fill>
+						<gradient type="conical">
+							<color position="start">#FFF021</color>
+							<color position="">#EFBA54</color>
+							<color position="">#625100</color>
+							<color position="end">#000000</color>
+						</gradient>
+					</fill>
+				</tkArc>
+			</tkHr>
+			<tkSecs>
+				<bgCircle outerRadius="18.9%" innerRadius="18.0%">
+					<fill color="#3B412F" />
+				</bgCircle>
+				<tkArc outerRadius="18.9%" innerRadius="18.0%">
+					<fill color="#929290" />
+				</tkArc>
+			</tkSecs>
+			<tkTxt font="Public_Sans" size="26pt" color="#737F8C" />
+		</style>
+		<style id="2">
+			<tkHr>
+				<bgCircle outerRadius="50%" innerRadius="0">
+					<fill>
+						<gradient type="radial">
+							<color position="center">#F2F4C8</color>
+							<color position="30%">#4F5147</color>
+							<color position="edge">#111111</color>
+						</gradient>
+					</fill>
+				</bgCircle>
+				<tkArc outerRadius="50%" innerRadius="22.6%">
+					<fill>
+						<gradient type="conical">
+							<color position="start">#FFF021</color>
+							<color position="">#EFBA54</color>
+							<color position="">#625100</color>
+							<color position="end">#000000</color>
+						</gradient>
+					</fill>
+				</tkArc>
+			</tkHr>
+			<tkSecs>
+				<bgCircle outerRadius="18.9%" innerRadius="18.0%">
+					<fill color="#3B412F" />
+				</bgCircle>
+				<tkArc outerRadius="18.9%" innerRadius="18.0%">
+					<fill color="#929290" />
+				</tkArc>
+			</tkSecs>
+			<tkTxt font="Public_Sans" size="26pt" color="#737F8C" />
+		</style>
+		<style id="3">
+			<tkHr>
+				<bgCircle outerRadius="50%" innerRadius="0">
+					<fill>
+						<gradient type="radial">
+							<color position="center">#F2F4C8</color>
+							<color position="30%">#4F5147</color>
+							<color position="edge">#111111</color>
+						</gradient>
+					</fill>
+				</bgCircle>
+				<tkArc outerRadius="50%" innerRadius="22.6%">
+					<fill>
+						<gradient type="conical">
+							<color position="start">#FFF021</color>
+							<color position="">#EFBA54</color>
+							<color position="">#625100</color>
+							<color position="end">#000000</color>
+						</gradient>
+					</fill>
+				</tkArc>
+			</tkHr>
+			<tkSecs>
+				<bgCircle outerRadius="18.9%" innerRadius="18.0%">
+					<fill color="#3B412F" />
+				</bgCircle>
+				<tkArc outerRadius="18.9%" innerRadius="18.0%">
+					<fill color="#929290" />
+				</tkArc>
+			</tkSecs>
+			<tkTxt font="Public_Sans" size="26pt" color="#737F8C" />
+		</style>
+	</tkCanvas>
+</theme>
